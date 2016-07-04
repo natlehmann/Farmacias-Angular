@@ -1,0 +1,22 @@
+<div ng-controller="FarmaciasListCtrl" class="container">
+	  <h1>Listado de Farmacias de la Ciudad Autónoma de Buenos Aires</h1>
+	  
+	  <hr/>
+	  
+	  <div class="row text-right">
+	  		<div class="col-md-10 text-right"><h4>Filtro de búsqueda:</h4></div>
+ 	  	<div class="col-md-2 text-right"><input ng-model="filtro"></div>
+	  </div>
+	  
+	  
+     <table class="table table-striped table-bordered">
+          <tr ng-repeat="farmacia in listado | filter:filtro">
+	          	
+	               <td><a ng-href="#/farmacia/{{farmacia.id}}">{{farmacia.direccion}}</a></td>
+	               <td>{{farmacia.barrio}}</td>
+	               <td>{{farmacia.comuna}}</td>
+	               <td>{{farmacia.telefono}}</td>
+          </tr>
+     </table>
+
+</div>
