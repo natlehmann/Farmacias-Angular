@@ -27,7 +27,7 @@ describe('FarmaciasListCtrl', function() {
         
         serviceMock.query = function() {
       	  return [];
-        }
+        };
         
         $controller('FarmaciasListCtrl', { $scope: scopeMock, FarmaciaService: serviceMock });
 
@@ -39,7 +39,7 @@ describe('FarmaciasListCtrl', function() {
         
         serviceMock.query = function() {
       	  return farmacias;
-        }
+        };
         
         $controller('FarmaciasListCtrl', { $scope: scopeMock, FarmaciaService: serviceMock });
 

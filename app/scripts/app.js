@@ -32,6 +32,11 @@ angular
         controller: 'FarmaciasListCtrl',
         controllerAs: 'farmaciasList'
       })
+      .when('/farmacia/:id', {
+        templateUrl: 'views/farmacia_detalle.html',
+        controller: 'FarmaciaDetalleCtrl',
+        controllerAs: 'farmaciaDetalle'
+      })
       .otherwise({
         redirectTo: '/farmacias/list'
       });
