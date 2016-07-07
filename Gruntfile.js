@@ -457,6 +457,14 @@ module.exports = function (grunt) {
         singleRun: false,
 	autowatch: true
       }
+    },
+    
+    protractor: {
+    	options: {
+    		keepAlive: true,
+    		configFile: "test/protractor.conf.js"
+    	},
+    	run: {}
     }
   });
 
@@ -487,7 +495,8 @@ module.exports = function (grunt) {
     'concurrent:test',
     'postcss',
     'connect:test',
-    'karma'
+    'karma',
+    'protractor:run'
   ]);
 
   grunt.registerTask('build', [

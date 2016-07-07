@@ -32,6 +32,7 @@
     "jit-grunt": "^0.9.1",
     "jshint-stylish": "^1.0.0",
     "karma": "^1.1.0",
+    "karma-chrome-launcher": "^1.0.1",
     "karma-coverage": "^1.1.0",
     "karma-jasmine": "^1.0.2",
     "karma-phantomjs-launcher": "^1.0.1",
@@ -43,6 +44,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "karma start test/karma.conf.js"
+    "test": "karma start test/karma.conf.js",
+    "install": "node node_modules/protractor/bin/webdriver-manager update"
   }
 }
