@@ -9,11 +9,8 @@
  */
 angular.module('farmaciasBaApp')
   .controller('FarmaciasListCtrl', function ($scope, FarmaciaService) {
-    
+
 	  $scope.filtro = '';
 	  
-	  FarmaciaService.query(function(data){
-		  $scope.listado = data;
-	  });
-	  
+	  $scope.listado = FarmaciaService.query();
   });
