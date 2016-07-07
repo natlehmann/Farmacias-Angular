@@ -1,7 +1,17 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss";
+
+//$body-bg:          #27ae60;
+//$table-bg-accent: #ff0000;
+//$table-border-color: #ff6600;
+//$navbar-default-link-color: #ff0000;
+
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+
 
 .browsehappy {
   margin: 0.2em 0;
